@@ -1,0 +1,465 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+h2 {
+    margin-bottom: 120px;
+    font-family: Berlin Sans FB;
+	line-height: 50px;
+}
+/* -- ============== Header Part ============== -- */
+.navbar {
+    background: #eaeaea;
+}
+.nav-item{
+	margin-left: 20px;
+}
+.nav-link {
+    font-family: Bahnschrift;
+}
+#navbarNav ul li::after{
+	content:'';
+	width: 0%; 
+	height: 2px;
+	background: #fd370a;
+	display: block;
+	margin: auto;
+	transition: 0.6s;
+}
+#navbarNav ul li:hover::after{
+	width: 50%;
+}
+header h1 {
+    font-family: Broadway;
+    padding: 21px 10px 21px 10px;
+    background: #ee491c;
+    margin: -16px 0px -16px 0px;
+}
+.button_part {
+    border: 1px solid #343a40;
+    font-size: 1.02rem;
+    font-family: Bahnschrift;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+@media only screen and (max-width: 576px){
+	header .button_part{
+		display: none;
+	}
+}
+/* -- ============== Home Part ============== -- */
+#home{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4, 9, 30, 0.85),rgba(4, 9, 30, 0.75)), url('../images/banner.png');
+	background-position: center;
+	background-size: cover;
+	position: relavtive;
+}
+#home .text-box{
+	width: 90%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#home h1 {
+    font-size: 4rem;
+	font-family: Berlin Sans FB;
+}
+#home .text-js{
+	opacity: 0;
+}
+#home p {
+    font-size: 1.02rem;
+	font-family: Bahnschrift;
+	line-height: 40px;
+}
+#home a {
+    border: 1px solid white;
+    padding: 10px 16px;
+    font-size: 1.02rem;
+	font-family: Bahnschrift;
+}
+#home a:hover {
+	background: #ee491c;
+	color: white !important;
+	border: none;
+}
+/* -- ============== Service Part ============== -- */
+#service {
+    margin: 150px 0px 120px 0px;
+}
+#service .card {
+    border: none;
+}
+#service .card__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#service .overlay__text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: #ee491c;
+    padding: 30px 40px 30px 40px;
+    top: 62%;
+    left: 25%;
+    font-family: Bahnschrift;
+}
+#service .overlay__text p {
+    margin-bottom: 0px !important;
+	font-size: 1.15rem !important;
+}
+#service a {
+    font-size: 1rem;
+    font-family: Bahnschrift;
+    margin-left: -16px;
+    margin-top: 25px;
+}
+@media only screen and (max-width: 950px){
+	#service .overlay__text {
+		text-align: justify;
+		padding: 5px;
+	}
+	#service .overlay__text p{
+		padding-bottom: 0px !important;
+	}
+	#service a{
+		margin-left: 10px !important;
+	}
+}
+@media only screen and (max-width: 576px){
+	#service .overlay__text p{
+		padding-left: 25px !important;
+	}
+}
+/* -- ============== Page Part ============== -- */
+#page {
+    margin: 150px 0px 120px 0px;
+}
+#page {
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.73),rgba(4, 9, 30, 0.56)), url('../images/page.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#page .text-box {
+    width: 100%;
+}
+#page h2 {
+    margin-bottom: 0px !important;
+}
+#page i {
+    padding: 30px;
+    border-radius: 45%;
+    background: #ee491c;
+    font-size: 2rem;
+    margin-top: 60px;
+}
+/* -- ============== Cases Part ============== -- */
+#cases {
+    margin: 150px 0px 120px 0px;
+}
+#cases .card {
+    border: none;
+}
+#cases .card__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: brightness(28%);
+    box-shadow: 0px 5px 15px -5px #0d0d0d;
+}
+#cases .overlay__text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 62%;
+    left: 25%;
+    font-family: Bahnschrift;
+}
+#cases .overlay__text p {
+    margin-bottom: 0px !important;
+    font-size: 1.30rem !important;
+    margin-top: 35px;
+}
+#cases i {
+    background: #ee491c;
+    padding: 14px;
+    margin-top: 37px;
+}
+@media only screen and (max-width: 950px){
+	.card .overlay__text p {
+		text-align: justify;
+		padding-left: 25px;
+		padding-bottom: 70px !important;
+	}
+	.card i{
+		padding: 8px !important;
+		margin-top: 0px !important;
+		margin-left: 25px;
+	}
+}
+@media only screen and (max-width: 576px){
+	.card .overlay__text p {
+		text-align: justify;
+		padding-bottom: 70px !important;
+		padding-left: 0px !important;
+	}
+	.card i{
+		padding: 14px !important;
+		margin-top: -45px !important;
+		margin-left: 5px;
+	}
+}
+/* -- ============== Testimonial Part ============== -- */
+#testimonial {
+    margin: 150px 0px 120px 0px;
+}
+#testimonial i {
+    padding: 30px;
+    border-radius: 45%;
+    background: #ee491c;
+    font-size: 2rem;
+}
+#testimonial p {
+    font-family: Bahnschrift;
+    font-size: 1.02rem;
+    line-height: 35px;
+}
+#testimonial small {
+    color: #ee491c;
+    font-size: 0.92rem;
+	font-family: Bahnschrift;
+}
+/* -- ============== About Part ============== -- */
+#about {
+    margin: 150px 0px 120px 0px;
+    background: #80808024;
+}
+#about h3 {
+    font-family: Berlin Sans FB;
+	line-height: 40px;
+}
+#about p, span {
+    font-family: Bahnschrift;
+    font-size: 1.02rem;
+}
+#about small {
+    color: #ee491c;
+    font-size: 1.05rem;
+	font-family: Bradley Hand ITC;
+}
+.animatable{
+	visibility: hidden;
+	-webkit-animation-play-state: paused;   
+	animation-play-state: paused; 
+}
+.animated{
+	visibility: visible;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-play-state: running;
+	animation-play-state: running;
+}
+@-webkit-keyframes bounceInLeft{
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(-2000px);
+	}
+	60% {
+		-webkit-transform: translateX(20px);
+	}
+
+	80% {
+		-webkit-transform: translateX(-5px);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+	}
+}
+.animated.bounceInLeft{
+	-webkit-animation-name: bounceInLeft;
+	animation-name: bounceInLeft;
+}
+/* -- ============== skill Part ============== -- */
+#skill {
+    margin: 150px 0px 120px 0px;
+}
+#skill h5 {
+    font-family: Berlin Sans FB;
+}
+#skill p {
+    font-family: Bahnschrift;
+    font-size: 1.02rem;
+    line-height: 35px;
+}
+#skill i {
+    padding: 30px;
+    border-radius: 45%;
+    color: #ee491c;
+    background: #80808024;
+    font-size: 2rem;
+}
+#skill .active {
+    background:#ee491c;
+}
+.skill_part :hover{
+	background: #ee491c;
+	cursor: pointer;
+}
+.skill_part :hover p{
+	color: white !important;
+}
+.skill_part :hover h5{
+	color: white !important;
+}
+.skill_part :hover i{
+	color: #fff !important;
+	background: #80808024 !important;
+}
+/* -- ============== Blog Part ============== -- */
+#blog {
+    margin: 150px 0px 120px 0px;
+}
+.carousel{
+	margin-top: 100px;	
+}
+.carousel-item img {
+    width: 80%;
+	height: 450px;
+}
+.carousel-item {
+    height: 750px;
+}
+.carousel-caption p {
+    font-family: Bahnschrift;
+    font-size: 1.02rem;
+}
+.carousel-caption small {
+    color: #ee491c;
+    font-size: 1.08rem;
+	font-family: Bradley Hand ITC;
+}
+.animatable{
+	visibility: hidden;
+	-webkit-animation-play-state: paused;   
+	animation-play-state: paused; 
+}
+.animated{
+	visibility: visible;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-play-state: running;
+	animation-play-state: running;
+}
+@-webkit-keyframes bounceIn {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(.3);
+	}
+	50% {
+		-webkit-transform: scale(1.05);
+	}
+	70% {
+		-webkit-transform: scale(.9);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+	}
+}
+.animated.bounceIn {
+	-webkit-animation-name: bounceIn;
+	animation-name: bounceIn;
+}
+@media only screen and (max-width: 1200px){
+	.carousel-item{
+		height: 750px;
+	}
+	.carousel-item img{
+		height: 450;
+		width: 80%;
+	}
+	.carousel-caption{
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 950px){
+	.carousel-item{
+		height: 720px;
+	}
+	.carousel-item img{
+		height: auto;
+		width: 100%;
+	}
+	.carousel-caption{
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 576px){
+	.carousel-item{
+		height: 650px;
+	}
+	.carousel-item img{
+		height: auto;
+		width: 100%;
+	}
+	.carousel-caption{
+		text-align: center;
+	}
+}
+/* -- ============== Experience Part ============== -- */
+#experience {
+    background: #ee491c;
+    padding: 14px;
+}
+#experience p{
+    font-family: Berlin Sans FB;
+    font-size: 1.75rem;
+}
+#experience a {
+    border: 1px solid white;
+    padding: 10px 16px;
+    font-size: 1.02rem;
+	font-family: Bahnschrift;
+}
+/* -- ============== Footer Part ============== -- */
+footer {
+    background:#0f0f37;
+	padding: 80px;
+}
+footer h4, p {
+    font-family: Berlin Sans FB;
+}
+footer i {
+    font-size: 16px !important;
+}	
+footer h6 {
+    color: white;
+    font-size: 1rem;
+    font-family: Bahnschrift;
+    line-height: 30px;
+}	
+footer .text-white{
+    color: #fff !important;
+    margin-top: -30px;
+    margin-bottom: -10px;
+}
+form {
+    background: #1c1c3e;
+    padding: 30px 10px 30px 10px;
+}
+form #name {
+    background: none;
+}
+
